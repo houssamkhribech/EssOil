@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap & jsDelivr  -->
+    <script src="lib/chart.js"></script><!--integrer la librairie graphique-->
+    <link href="/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav>
+      <h1>EssOil</h1>
+      <div class="onglets">
+          <!--<a id="" href="{{ url_for('monit') }}">Monitoring</a>-->
+          <a id="" href="home">Accueil</a>
+          <a id="" href="monitoring">Monitoring</a>
+          <a id="" href="control">Commande</a>
+          <a id="" href="database">Données</a>
+          <a id="" href="administration">Administration</a>
+          <a type="button" href="" id="btn-logout">Se déconnecter</a>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>HELMo Gramme</h1>
+        <h4>HUILE ESSENTIELLE</h4>
+    </header>
+    <section class="main0">
+      <div class="content0">
+        <div class="card0">
+          <div class="left0">
+            <h1>Explication du proc</h1>
+            <p>
+              La méthode d’extraction des huiles essentielles utilisée (voir
+              Figure à droite) est appelée « la distillation par entrainement à
+              la vapeur d’eau » (à basse pression dans notre cas), et le
+              principe est le suivant : <br /><br />
+
+              •La pompe à vide permet de baisser la pression à l’intérieur de la
+              cuve.<br />
+              •L’eau est chauffée jusqu’à la température d’ébullition pour
+              produire de la vapeur d’eau.<br />
+              •La vapeur d’eau traverse la matière première (lavande) pour en
+              extraire l’huile. <br />
+              •La vapeur d’eau mélangée à de l’huile est refroidi au niveau du
+              condenseur.<br />
+              •Dans le récipient de sortie le mélange huile/hydrolat (eau
+              aromatisée) est prêt à êtrecollecté et séparé (par décantation).
+            </p>
+          </div>
+
+          <div class="right0">
+            <img src="static/img/processus.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main1">
+      <div class="content1">
+        <div class="card1">
+          <div class="left1">
+            <h1>Monotoring</h1>
+            <p>
+              La section "Monitoring" permet d'afficher les données envoyées par l'ESP32.
+            </p>
+          </div>
+
+          <div class="right1">
+            <img src="static/img/graphique.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main2">
+      <div class="content2">
+        <div class="card2">
+          <div class="left2">
+            <h1>Control</h1>
+            <p>La section "Control" permet de commander le procédé à distance via l'ESP32.</p>
+          </div>
+
+          <div class="right2">
+            <img src="static/img/reglage.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main3">
+      <div class="content3">
+        <div class="card3">
+          <div class="left3">
+            <h1>Database</h1>
+            <p>La section "Database" assure la traçabilité des extractions.</p>
+          </div>
+
+          <div class="right3">
+            <img src="static/img/basedonnee.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!--le bas de page-->
+      <h1>Nos contacts</h1>
+
+      <div class="contacts" id="contacts">
+        <div class="contact">
+          <h3>Youssef Tiberkanine</h3>
+          <p>
+            Très facile à contacter joignable à tout moment sur son adresse
+            email tiberyoussef@gmail.com
+          </p>
+        </div>
+        <div class="contact">
+          <h3>Houssam</h3>
+          <p>
+            Très facile à contacter joignable à tout moment sur son adresse
+            email
+          </p>
+        </div>
+      </div>
+
+      <p>Contact : 085 12 45 15 1 | &copy; 2021, L'huile.</p>
+    </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--integrer la librairie graphique-->
+    <link rel="stylesheet" href="static/css/style.css" >
+    <!-- Bootstrap CSS -->
+  
+    <link href=/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   
+    <title>Monitoring</title>
+
+   
+  </head>
+  <body>
+     <!--Navigation bar-->
+     <nav>
+      <h1>EssOil</h1>
+      <div class="onglets">
+          <!--<a id="" href="{{ url_for('monit') }}">Monitoring</a>-->
+          <a id="" href="home">Accueil</a>
+          <a id="" href="monitoring">Monitoring</a>
+          <a id="" href="control">Commande</a>
+          <a id="" href="database">Données</a>
+          <a id="" href="administration">Administration</a>
+          <a type="button" href="" id="btn-logout">Se déconnecter</a>
+      </div>
+    </nav>
+    
+
+    <section class="mainPageIntermediaire">
+      <div style="width:75%">
+        <canvas id="myChart" width="900" height="400"></canvas>
+        <script>
+            Chart.defaults.global.title.display=true;
+            Chart.defaults.global.title.text = "La temperature en fct de"; 
+            Chart.defaults.global.elements.point.radius=10;
+        </script>
+        <script>
+            // === include 'setup' then 'config' above ===
+          
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, { //on crée lobjet graphique
+            type: 'line',  //de type ligne
+            data : {
+                labels: {{ labels | safe }},
+                datasets: [{
+                        label: "temperature",
+                        backgroundColor: 'rgb(20, 100, 12)',
+                        borderColor: 'rgb(25, 99, 132)',
+                        data: {{ values | safe }}
+                            }]
+                            },
+                option:{
+                  responsive :
+                    title:{ text:"Evolution de température dans la cuve en fonction du temps"} 
+                    ,element:{point:{radius:5}}
+                        }
+                    });
+        </script>
+    </div>
+
+    </section>
+   
+
+    
+     <!-- <button>
+      <div class="btn">
+      <a href="indexx.html">Retour au Menu principal</a>
+    </div>
+    </button>  -->
+
+      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+      <a class="btn btn-primary" for="btn-check" href="indexx.html">Retour menu principal</a>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	  <script src="app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+/*.bg-light {
+    background-color: #7f8c8d!  important;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);/*jeu d'ombre
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ecf0f1;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ecf0f1;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .nav-link:focus {
+    color: white;
+    border-bottom: 2px solid white; 
+}  pour qd on survole avec la souris la couleur brille un peu et surligne*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+/*choix de la police decriture*/
+html{
+    scroll-behavior: smooth;/*qd on clique sur un bouton on descend sur la page correspondante en douceur*/
+}
+body{
+    margin: 0;/*marge exterieur de lelement*/
+    padding: 0; /*marge int vers lext*/
+    font-family:'Montserrat', sans-serif ;
+}
+
+nav{
+    display: flex;/*on aligne les elements*/
+    flex-wrap: wrap;/*on fait de mm on les empile*/
+    justify-content: center;/*centrer les elemnts*/
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;/*couleur de la bordure*/
+
+}
+
+nav h1{
+    color: #717171;/*coleur pour le titre*/
+    font-family: 'Playfair Display',sans-serif; /*appliquer la pplice*/
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;/*on eloigne les logos de notre titre*/ 
+}
+nav .onglets a{
+    text-decoration: none;/*enlever soulignement par defaut*/
+    color: black;
+    margin-right: 10px;/*marge ext vers la droite de 10pixel espacement entre chaque mot*/
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;/*eloignement du soulignement*/
+}
+
+header{
+    display: flex;/*aligne les elements*/
+    flex-direction: column;/*on empile en colonne*/
+    align-items: center;
+    background: url('/static/img/huile.jpeg');
+    background-size: cover;/*couvrir la totalité du header*/
+    color:white;
+    padding : 40px;/*marge int de tt les bords de lelement*/
+}
+
+header h1{
+    font-family: 'Playfair Display',sans-serif; /*appliquer la pplice*/
+    font-size: 50px; /*on agrandit le titre principal*/
+    align-items: center;
+}
+
+header h4{
+    margin-top: 20px;/*le texte se rapproche du titre princ*/
+    font-size: 20px;/*taille police*/
+    text-align: center;/*centrer le texte avec le titre format mobile*/
+    border-bottom: 1px solid #ffff;
+}
+
+

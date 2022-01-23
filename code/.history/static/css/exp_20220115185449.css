@@ -1,0 +1,355 @@
+/*.bg-light {
+    background-color: #7f8c8d!  important;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);/*jeu d'ombre
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ecf0f1;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ecf0f1;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .nav-link:focus {
+    color: white;
+    border-bottom: 2px solid white; 
+}  pour qd on survole avec la souris la couleur brille un peu et surligne*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap");
+/*choix de la police decriture*/
+
+html {
+  scroll-behavior: smooth; /*qd on clique sur un bouton on descend sur la page correspondante en douceur*/
+}
+body {
+  margin: 0; /*marge exterieur de lelement*/
+  padding: 0; /*marge int vers lext*/
+  font-family: "Montserrat", sans-serif;
+
+}
+
+nav {
+  display: flex; /*on aligne les elements*/
+  flex-wrap: wrap; /*on fait de mm on les empile*/
+  justify-content: center; /*centrer les elemnts*/
+  align-items: center;
+  border-bottom: 5px solid #6f6f6f; /*couleur de la bordure*/
+}
+
+nav h1 {
+  color: #717171; /*coleur pour le titre*/
+  font-family: "Playfair Display", sans-serif; /*appliquer la pplice*/
+  font-size: 30px;
+}
+nav .onglets {
+  margin-top: 3px;
+  margin-left: 300px; /*on eloigne les logos de notre titre*/
+}
+nav .onglets a {
+  text-decoration: none; /*enlever soulignement par defaut*/
+  color: black;
+  margin-right: 10px; /*marge ext vers la droite de 10pixel espacement entre chaque mot*/
+  border-bottom: 1px solid black;
+  padding-bottom: 5px; /*eloignement du soulignement*/
+}
+
+header {
+  display: flex; /*aligne les elements*/
+  flex-direction: column; /*on empile en colonne*/
+  align-items: center;
+  background-image: url("/static/img/huile.jpeg");
+  background-size: cover; /*couvrir la totalité du header*/
+  color: white;
+  padding: 40px; /*marge int de tt les bords de lelement*/
+}
+
+header h1 {
+  font-family: "Playfair Display", sans-serif; /*appliquer la pplice*/
+  font-size: 50px; /*on agrandit le titre principal*/
+  align-items: center;
+}
+
+header h4 {
+  margin-top: 20px; /*le texte se rapproche du titre princ*/
+  font-size: 20px; /*taille police*/
+  text-align: center; /*centrer le texte avec le titre format mobile*/
+  border-bottom: 1px solid #ffff;
+}
+
+button .btn {
+  padding: 10px 40px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif; /*appliquer la police*/
+  outline: none; /*enlever leffet qd on parcourt avec la souris*/
+  cursor: pointer;
+}
+
+.main0 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*pour centrer les elements au mileu de la page*/
+}
+.main0 .content0 .card0 {
+  display: flex; /*aligne le texte et la photo*/
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto; /*pr bien aligner avec les photo et texte d'en bas*/
+  margin-bottom: 20px;
+}
+
+.main0 .content0 .card0 .left0 {
+  flex: 0 0 30%; /*rendre limage sur une mm hauteur que le texte*/
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.main0 .content0 .card0.right0 {
+  flex: 0 0 70%;
+}
+
+.main0 .content0 .card0 .right0 img {
+  height: 400px; /*modif de la taille hauteur*/
+  width: 600px; /*modif largeur*/
+  margin-top: 5px; /*espace entre limage et le texte utile pour format mobile*/
+}
+
+.main1 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*pour centrer les elements au mileu de la page*/
+}
+.main1 .content1 .card1 {
+  display: flex; /*aligne le texte et la photo*/
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.main1 .content1 .card1 .left1 {
+  flex: 0 0 30%; /*rendre limage sur une mm hauteur que le texte*/
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.main1 .content1 .card1.right1 {
+  flex: 0 0 70%;
+}
+
+.main1 .content1 .card1 .right1 img {
+  height: 400px; /*modif de la taille hauteur*/
+  width: 600px; /*modif largeur*/
+  margin-top: 5px; /*espace entre limage et le texte utile pour format mobile*/
+}
+
+.main2 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*pour centrer les elements au mileu de la page*/
+}
+
+.main2 .content2 .card2 .left2 {
+  flex: 0 0 30%; /*rendre limage sur une mm hauteur que le texte*/
+  padding: 20px;
+  background-color: black;
+  margin-left: 14px;
+  color: white;
+}
+
+.main2 .content2 .card2.right2 {
+  flex: 0 0 70%;
+}
+
+.main2 .content2 .card2 {
+  display: flex; /*aligne le texte et la photo*/
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.main2 .content2 .card2 .right2 img {
+  height: 300px; /*modif de la taille hauteur*/
+  width: 400px; /*modif largeur*/
+}
+
+.main3 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*pour centrer les elements au mileu de la page*/
+}
+
+.main3 .content3 .card3 .left3 {
+  flex: 0 0 30%; /*rendre limage sur une mm hauteur que le texte*/
+  padding: 20px;
+  margin-left: 23px;
+  background-color: black;
+  color: white;
+}
+
+.main3 .content3 .card3.right1 {
+  flex: 0 0 70%;
+}
+
+.main3 .content3 .card3 {
+  display: flex; /*aligne le texte et la photo*/
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.main3 .content3 .card3 .right3 img {
+  height: 300px; /*modif de la taille hauteur*/
+  width: 400px; /*modif largeur*/
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 5px solid #6f6f6f; /*on crée la barre pour faire la separation*/
+  background-color: black;
+  color: white;
+  padding: 30px 100px; /*marge de 30px en haut et en bas et 100px a droite et a gauche*/
+}
+
+footer h1 {
+  font-family: "Playfair Display", sans-serif; /*appliquer la pplice*/
+  border-bottom: 1px solid white; /*soulignement en dessous de nos contacts*/
+  width: 15%; /*on diminue la largeur du soulignement*/
+  padding-bottom: 5px;
+}
+
+footer .contacts {
+  margin-top: -10px; /*on diminue lespace entre les elements*/
+  display: flex; /*aligner en ligne*/
+  flex-wrap: wrap; /*pour le tel si s'aligne pas*/
+}
+
+footer .contacts .contact {
+  margin-right: 30px;
+  padding: 10px; /*espace interieur pr chaque element*/
+}
+
+footer .contacts .contact p {
+  max-width: 300px; /*pour bien les aligner pcq le flexwrap les remet en colonne*/
+}
+
+footer #service {
+  /*le # permet de dire au css quon est sur lidentifiant*/
+  color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width: 600px) {
+  /*on adapte a un ecran de tel*/
+  nav .onglets {
+    margin-left: 0px; /*on annule la marge quil ya entre le titre et le lien qd on est
+        dessous dun ecran de 600px */
+    margin-bottom: 20px; /*on seloigne de la bordure*/
+  }
+
+  .main1 .card1 {
+    margin: 10px;
+  }
+  .main1 .content1 .card1 .right1 img {
+    height: 200px;
+    width: 100px;
+    margin-top: 0px;
+  }
+  .main1 .content1 .card1 {
+    display: block;
+  }
+
+  .main2 .card2 {
+    margin: 10px;
+  }
+  .main2 .content2 .card2 .right2 img {
+    height: 200px;
+    width: 100px;
+    margin-top: 0px;
+  }
+  .main2 .content2 .card2 {
+    display: block;
+  }
+
+  .main3 .card3 {
+    margin: 10px;
+  }
+  .main3 .content3 .card3 .right3 img {
+    height: 200px;
+    width: 100px;
+    margin-top: 0px;
+  }
+  .main3 .content3 .card3 {
+    display: block;
+  }
+
+  footer {
+    padding: 30px;
+  }
+}
+
+.headerPageIntermediaire {
+  display: flex; /*aligne les elements*/
+  flex-direction: column; /*on empile en colonne*/
+  align-items: center;
+  background: url("/static/img/huile.jpeg");
+  background-size: cover; /*couvrir la totalité du header*/
+  color: white;
+  padding: 40px; /*marge int de tt les bords de lelement*/
+  border-bottom: 5px solid #6f6f6f;
+}
+
+.mainPageIntermediaire {
+  align-items: center;
+  margin: 40px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.center h1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.center button {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+.center button:hover {
+  border-color: #2691d9;
+  transition: 0.5s;
+}
+
+
+.msg-addExp {
+  
+}
